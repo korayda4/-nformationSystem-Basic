@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgilendirme Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="search-product-wrapper" id="search-content">
+        <div class="search-product-content">
+            <img src="logo.png" width="200" height="200" style="object-fit:cover;">
+            <p>Oyun Durum Sorgulama Sistemi</p>
+            <input type="text"  id="sorgukod" placeholder="Lütfen Sorgu kodunuzu giriniz">
+            <button type="button" onclick="getInfo(document.getElementById('sorgukod').value)"><i class="fa-solid fa-magnifying-glass"></i> Sorgula</button>
+            <p class="error-message" id="errormsg">Aradığınız Sorgu Koduna Ait Proje bulunamamıştır </p>
+        </div>
+    </div>
+
+    <div class="info-wrapper" id="info-wrapper">
+
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./users.js"></script>
+</body>
+</html>
