@@ -1,3 +1,3 @@
-# -nformationSystem-Basic
+# informationSystem-Basic
 
 Basic JavaScript Test
